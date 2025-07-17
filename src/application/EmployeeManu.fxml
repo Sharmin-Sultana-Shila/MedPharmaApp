@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeMenuController">
+   <children>
+      <RadioButton fx:id="addItemRB" layoutX="198.0" layoutY="93.0" mnemonicParsing="false" onAction="#addItems" prefHeight="19.0" prefWidth="283.0" text="Add items.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="viewAccRB" layoutX="198.0" layoutY="126.0" mnemonicParsing="false" onAction="#view_AccOrder" prefHeight="18.0" prefWidth="203.0" text="View and accept order.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="searchRB" layoutX="198.0" layoutY="158.0" mnemonicParsing="false" onAction="#searchItem" prefHeight="18.0" prefWidth="203.0" text="Search items.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="expMedRB" layoutX="198.0" layoutY="190.0" mnemonicParsing="false" onAction="#expMed" prefHeight="18.0" prefWidth="203.0" text="Get expired medicines.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="417.0" layoutY="340.0" mnemonicParsing="false" text="Logout">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="500.0" layoutY="340.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="63.0" text="Next">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

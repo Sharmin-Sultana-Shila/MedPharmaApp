@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerMenuController">
+   <children>
+      <Button fx:id="nextB" layoutX="501.0" layoutY="334.0" mnemonicParsing="false" onAction="#next" prefHeight="30.0" prefWidth="72.0" text="Next">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="logoutB" layoutX="402.0" layoutY="334.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="72.0" text="Logout">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <RadioButton fx:id="searchAndReqRB" layoutX="184.0" layoutY="99.0" mnemonicParsing="false" onAction="#searchAndReq" prefHeight="18.0" prefWidth="217.0" text="Search items and request order" />
+      <RadioButton fx:id="viewOrderAndPayBillRB" layoutX="184.0" layoutY="151.0" mnemonicParsing="false" onAction="#viewOrderAndPayBill" prefHeight="18.0" prefWidth="328.0" text="View details of your oder and pay bill" />
+   </children>
+</AnchorPane>

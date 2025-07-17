@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchWindowController">
+   <children>
+      <RadioButton fx:id="medicineRB" layoutX="32.0" layoutY="16.0" mnemonicParsing="false" onAction="#med" text="Medicine" />
+      <RadioButton fx:id="accessoryRB" layoutX="122.0" layoutY="16.0" mnemonicParsing="false" onAction="#acc" text="Accessory" />
+      <RadioButton fx:id="bothRB" layoutX="217.0" layoutY="16.0" mnemonicParsing="false" onAction="#both" text="Both" />
+      <TextField fx:id="nameField" layoutX="47.0" layoutY="44.0" promptText="Name" />
+      <TextField fx:id="manufacturerField" layoutX="47.0" layoutY="80.0" promptText="Manufacturer" />
+      <TextField fx:id="unitPriceField" layoutX="47.0" layoutY="121.0" promptText="Unit Price" />
+      <TextField fx:id="modelNumberField" layoutX="47.0" layoutY="162.0" promptText="Model Number" />
+      <TextField fx:id="unitField" layoutX="47.0" layoutY="200.0" promptText="Unit" />
+      <TextField fx:id="doseField" layoutX="47.0" layoutY="238.0" promptText="Dose" />
+      <Label layoutX="82.0" layoutY="275.0" text="Expiration Date" />
+      <TextField fx:id="dayField" layoutX="47.0" layoutY="304.0" prefHeight="18.0" prefWidth="39.0" promptText="DD" />
+      <TextField fx:id="yearField" layoutX="159.0" layoutY="304.0" prefHeight="18.0" prefWidth="39.0" promptText="YY" />
+      <TextField fx:id="monthField" layoutX="102.0" layoutY="304.0" prefHeight="18.0" prefWidth="39.0" promptText="MM" />
+      <Button fx:id="searchButton" layoutX="496.0" layoutY="12.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
+      <Button fx:id="menuButton" layoutX="708.0" layoutY="344.0" mnemonicParsing="false" onAction="#menu" prefHeight="30.0" prefWidth="62.0" text="Menu">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Separator layoutX="281.0" orientation="VERTICAL" prefHeight="400.0" />
+      <Button fx:id="loginButton" layoutX="627.0" layoutY="344.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="62.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TreeView fx:id="treeView" layoutX="300.0" layoutY="46.0" prefHeight="282.0" prefWidth="482.0" />
+   </children>
+</AnchorPane>

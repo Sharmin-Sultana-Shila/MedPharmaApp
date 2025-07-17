@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewOrderAndPayBillController">
+   <children>
+      <Button fx:id="menuB" layoutX="509.0" layoutY="343.0" mnemonicParsing="false" onAction="#menu" prefHeight="30.0" prefWidth="58.0" text="Menu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="48.0" layoutY="29.0" text="For searching">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="120.0" text="For order details">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contactTF" layoutX="51.0" layoutY="79.0" promptText="Contact" />
+      <TextField fx:id="orderIDTF" layoutX="359.0" layoutY="79.0" promptText="OrderID" />
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="26.0" prefWidth="58.0" text="Pay Bill">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchB" layoutX="217.0" layoutY="79.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Button fx:id="payB" layoutX="525.0" layoutY="79.0" mnemonicParsing="false" onAction="#payBill" prefHeight="26.0" prefWidth="44.0" text="Pay" />
+      <Button fx:id="loginB" layoutX="434.0" layoutY="343.0" mnemonicParsing="false" onAction="#login" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TreeView fx:id="treeView" layoutX="11.0" layoutY="146.0" prefHeight="200.0" prefWidth="579.0" />
+   </children>
+</AnchorPane>
